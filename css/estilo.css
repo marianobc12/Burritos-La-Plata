@@ -27,8 +27,9 @@ body{
     padding: 40px;
 }
 .cont-redes>a:hover{
-    background: #f60001;
+    background: #D00000;
     border:2px solid white;
+    animation:pulse 1s forwards;
 }
 /*.cont-redes>a>img{
 
@@ -52,7 +53,7 @@ body{
     margin-bottom: 10px;
 }
 .menu  .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
-    background: #F60001;
+    background: #D00000;
     animation: pulse 1s forwards;
 }
 .menu  .navbar-collapse .navbar-nav .nav-item .logo{
@@ -185,4 +186,54 @@ body{
     font-size: 50px;
     text-align: center;
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+/* MENU COMIDA */
+.cont-comida{
+   /* background: #D00000;*/
+   background-image: url('../img/fondo-menu.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100% 100%;
+}
+.cont-comida .volver{
+    background: transparent;
+    border:2px solid white;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+.cont-comida .titulo{
+    color: white;
+    font-size: 60px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    text-align: center;
+}
+.cont-comida .titulo>img{
+    margin-bottom: 10px;
+}
+.cont-comida .titulo .logo-menu{
+    border-radius: 100%;
+}
+.menu-comida .comida{
+    padding: 5px 5px 5px 5px;
+}
+.menu-comida .comida>h2{
+    color: white;
+    font-size: 60px;
+}
+.menu-comida .comida>p{
+    color: white;
+    font-size: 30px;
+}
+
+
+/* PRESENTACION */
+.cont-inicial{
+    background-image: url('../img/fondo-inicial.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }

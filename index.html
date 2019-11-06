@@ -8,141 +8,25 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <title>Burritos - La Plata</title>
+    <title>Burritos</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-light menu" data-aos="fade-down"  data-aos-easing="linear" data-toggle="affix">
-        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-            <a class="navbar-brand d-md-none" href="#">Brand</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarsExample11">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link"  href="#carouselExampleIndicators"><img  src="img/home.png" alt="Home" width="40" height="40"> INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  href="#nosotros"><img  src="img/conocenos.png" alt="Home" width="40" height="40"> NOSOTROS</a>
-                    </li>
-                    <li class="nav-item cont-logo">
-                        <a class="nav-link" href="#"><img class="logo" src="img/logo.jpg" width="100" height="100" alt=""><img class="d-block m-auto" width="30" height="30" src="img/bandera3.gif" alt=""></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#local"><img  src="img/placeholder.png" alt="Home" width="40" height="40"> LOCAL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img  src="img/contacto.png" alt="Home" width="40" height="40"> CONTACTO</a>
-                    </li>
-                </ul>
+<body onload="setTimeout('redireccionarPagina()', 2000);">
+    <div class="container-fluid cont-inicial">
+        <div class="row h-100">
+            <div class="col-md-6 offset-3 my-auto">
+                <img src="img/logo-menu.jpg" width="200" height="200" alt="" class="animated pulse infinite" style="display: block;margin: auto;border-radius: 100%;">
+                <img src="img/bandera3.gif" class="mt-4" width="40" height="40" alt="" style="display: block;margin: auto;border-radius: 100%;">
+                <h1 class="text-white text-center mt-4">¡Bienvenido!</h1>
             </div>
         </div>
-    </nav> 
-
-    <div class="col-md-6 offset-md-3 cont-redes" >
-        <a href="" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500"><img src="img/facebook.png" alt="" width="50" height="50"></a>
-        <a href="" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500"><img src="img/instagram.png" alt="" width="50" height="50"></a>
-        <a href="" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500"><img src="img/youtube.png" alt="" width="50" height="50"></a>
     </div>
-
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade slider-inicio" data-pause="true" data-ride="carousel" data-interval="3000">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100 h-100" src="img/fotoprueba1.jpg" alt="First slide">
-            <div class="carousel-caption  d-md-block cont-comment">
-                <h5 class="comment">¡ PROBÁ NUESTROS BURRITOS !</h5>
-                <!--<p>...</p>-->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 h-100" src="img/fotoprueba2p.jpg" alt="Second slide">
-            <div class="carousel-caption  d-md-block cont-comment">
-                <h5 class="comment">¡ LOS MEJORES TACOS !</h5>
-                <!--<p>...</p>-->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 h-100" src="img/fotoprueba3.jpg" alt="Third slide">
-            <div class="carousel-caption  d-md-block cont-comment">
-                <h5 class="comment">¡ CON AMIGOS Y FAMILIA !</h5>
-                <!--<p>...</p>-->
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Siguiente</span>
-        </a>
-      </div>
-
-
-      <div class="container-fluid nosotros" id="nosotros">
-          <div class="row">
-              <div class="col-md-4 offset-md-1 logo">
-                <img class="img-fluid" src="img/logo.jpg" alt="" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
-              </div>
-              <div class="col-md-6 historia" data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">
-                  <h4 class="text-center">
-                    BURRITOS LA PLATA, nace como una iniciativa para ofrecer la deliciosa comida mexicana con toda la onda platense ofreciendo ricos burritos rellenos de lo que le gusta a la ciudad, un lugar para disfrutar con amigos y familia en el centro de la ciudad.
-                  </h4>
-              </div>
-          </div>
-      </div>
-
-      <div class="container-fluid local" id="local">
-        <div class="row">
-            <div class="col-md-6 cont-ubicacion">
-                <h1 class="text-center mb-5"><i class="fas fa-map-marker-alt"></i> Ubicación</h1>
-                <div class="cont-mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.687713072215!2d-57.96118088416753!3d-34.91428568150489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62f8ea7b55f%3A0x537956dff7bed5b2!2sBurritos%20Mexican%20Food%20La%20Plata!5e0!3m2!1sen!2sar!4v1573013146421!5m2!1sen!2sar" width="100%" height="450" frameborder="0" style="border:2px solid white;border-radius: 5px;" allowfullscreen="">
-                </iframe>
-                </div>
-            </div>
-            <div class="col-md-6 cont-menu">
-                <h1 class="text-center"><i class="fas fa-utensils"></i> Nuestro Menú</h1>
-                <button class="btn btn-lg d-block mx-auto btn-info ver-menu"><img src="img/taco.png" width="60" height="60" alt=""> Ver Menu</button>
-            </div>
-        </div>
-      </div>
-            
-
-    
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/funciones.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-        $(document).ready(function() {
-        $('.nav-link').click(function() {
-            var destino = $(this.hash);
-            if (destino.length == 0) {
-            destino = $('a[name="' + this.hash.substr(1) + '"]');
-            }
-            if (destino.length == 0) {
-            destino = $('html');
-            }
-            $('html, body').animate({ scrollTop: destino.offset().top }, 500);
-            return false;
-        });
-        });
-    </script>
-
-
 </body>
+
+
+<script>
+function redireccionarPagina() {
+  window.location = "inicio.html";
+}
+</script>
+
 </html>
