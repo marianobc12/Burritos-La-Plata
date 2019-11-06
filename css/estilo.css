@@ -1,0 +1,188 @@
+/*  LETRA */
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+/* ANIMACIONES */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+
+body{
+  height:100%;
+  width:100%;
+  margin: 0px;
+  font-family: 'Staatliches', cursive;
+}
+
+/* REDER */
+.cont-redes{
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+}
+.cont-redes>a{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100%;        
+    background: rgba(255,255,255,.3);
+    display:inline-block;
+    padding: 40px;
+}
+.cont-redes>a:hover{
+    background: #f60001;
+    border:2px solid white;
+}
+/*.cont-redes>a>img{
+
+}*/
+
+
+/* MENU */
+.menu{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.menu  .navbar-collapse .navbar-nav .nav-item{
+    padding: 20px 20px;
+}
+.menu  .navbar-collapse .navbar-nav .nav-item .nav-link{
+    font-size: 35px;
+    color: white;
+}
+.menu  .navbar-collapse .navbar-nav .nav-item .nav-link>img{
+    margin-bottom: 10px;
+}
+.menu  .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    background: #F60001;
+    animation: pulse 1s forwards;
+}
+.menu  .navbar-collapse .navbar-nav .nav-item .logo{
+    border-radius: 100%;
+    filter: brightness(120%);
+}
+.menu  .navbar-collapse .navbar-nav .cont-logo{
+    padding: 0px;
+    animation: swing 1s forwards;
+}
+.menu  .navbar-collapse .navbar-nav .cont-logo .nav-link:hover{
+    background: transparent;
+}
+
+
+/* INICO */
+/*.cont-inicio{
+    background-image: url('../img/foto-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    transition: background-image 5s; 
+}*/
+
+.slider-inicio .carousel-inner{
+    height: 100%;
+}
+
+
+@keyframes titleAnimation {
+    0% {
+      transform: translateY(-90px);
+      opacity: 0;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 200%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 200%);
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
+
+}
+
+.cont-comment .comment{
+    color: white;
+    font-size: 6vw;
+    text-shadow: 5px 5px black;
+    text-align: center;
+    animation: titleAnimation 1s forwards;
+}
+
+
+
+/* NOSOTROS */
+.nosotros{
+    background:url('../img/nosotros.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.nosotros .historia{
+    margin-top: 300px;
+    margin-bottom:300px;
+    background: transparent;
+    
+}
+.nosotros .logo{
+    margin-top: 300px;
+    margin-bottom:300px;
+    display:flex;
+    align-items: center;
+}
+.nosotros .logo>img{
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 26px 12px rgba(0,0,0,0.75);
+}
+.nosotros .historia>h4{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+
+/* LOCAL */
+.local{
+    background:url('../img/local2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.cont-ubicacion{
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+.cont-ubicacion>h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+.cont-ubicacion .cont-mapa{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.cont-menu>h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+.cont-menu{
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+.cont-menu .ver-menu{
+    margin-top: 20%;
+    background: transparent;
+    border:2px solid white;
+    width: 50%;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
