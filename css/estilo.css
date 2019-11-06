@@ -116,12 +116,12 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    overflow-x : hidden;
 }
 .nosotros .historia{
     margin-top: 300px;
     margin-bottom:300px;
     background: transparent;
-    
 }
 .nosotros .logo{
     margin-top: 300px;
