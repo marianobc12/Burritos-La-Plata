@@ -237,3 +237,61 @@ body{
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+
+
+
+/* MEDIAS */
+@media screen and (max-width: 992px){
+    .menu  .navbar-collapse .navbar-nav .nav-item .nav-link{
+        font-size: 20px;
+    }
+    .nosotros .historia{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    .nosotros .logo{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    .nosotros .historia>h4{
+        font-size: 30px;
+    }
+    .nosotros .logo>img{
+        height: 200px;
+        width: 200px;
+    }
+    .cont-redes>a>img{
+        width: 30px;
+        height: 30px;
+    }
+    .cont-redes>a{
+        padding: 30px;
+    }
+    .cont-menu .ver-menu{
+        margin-top: 40%;
+        width: 80%;
+    }
+    .cont-ubicacion .cont-mapa{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .nosotros .historia{
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+    .nosotros .logo{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .cont-menu{
+        overflow-x : hidden;
+    }
+    .cont-menu .ver-menu{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+}
